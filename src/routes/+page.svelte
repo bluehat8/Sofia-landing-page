@@ -1,6 +1,6 @@
 
 <script>
-    import '../global.css'
+    import '../styles/global.css'
 
     import '../styles/wave.css'
     import Banner from '../components/banner.svelte';

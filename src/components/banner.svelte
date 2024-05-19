@@ -1,5 +1,5 @@
 <script>
-    import '../global.css';
+    import '../styles/global.css';
     let imagePath = 'images/banner-sofia.webp';
 </script>
 
