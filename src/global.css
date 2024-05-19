@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  
+ :root{
+    /* --overlay-color: rgba(0, 0, 0, 0.7); */
+    --font-size-title: 3rem;
+  }
+
+  /* .overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--overlay-color);
+  } 
+   */
+  /* NAVBAR */
+  
+    body{
+        background-color: black;
+    }
+  
+    .margin-top-navbar {
+          margin-top: 7rem; 
+    }
+  
+    .text-gradient {
+      background: linear-gradient(88.32deg, #0b7dc3, #12d0d5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    .logo-img {
+      height: 50px; 
+      width: auto;
+    }
+  
+  
+  
+    /* .navbar-glassm{
+    background-color: rgba(255, 255, 255, 0.6); 
+    backdrop-filter: blur(10px); 
+    } */
+  
+  .btn-custom {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+    background-color: rgba(156, 156, 156, 0.166);
+  
+  }
+  
+  .BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all .3s;
+  }
+  
+  .BG-facebook{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0B76C2; /* Color de fondo base */
+    background: -moz-linear-gradient(45deg, #0B76C2 0%, #3498DB 25%, #56C7E9 50%, #78D7F2 75%, #9BD7F5 100%);
+    background: -webkit-linear-gradient(45deg, #0B76C2 0%, #3498DB 25%, #56C7E9 50%, #78D7F2 75%, #9BD7F5 100%); 
+    background: linear-gradient(45deg, #0B76C2 0%, #3498DB 25%, #56C7E9 50%, #78D7F2 75%, #9BD7F5 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0B76C2', endColorstr='#9BD7F5',GradientType=1 ); 
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all .3s;
+  }
+  
+  .BG-whatsapp{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #25D366; /* Verde claro (similar a WhatsApp) */
+    background: -moz-linear-gradient(45deg, #25D366 0%, #29ABCA 25%, #47C1A4 50%, #65D78C 75%, #84E373 100%); 
+    background: -webkit-linear-gradient(45deg, #25D366 0%, #29ABCA 25%, #47C1A4 50%, #65D78C 75%, #84E373 100%); 
+    background: linear-gradient(45deg, #25D366 0%, #29ABCA 25%, #47C1A4 50%, #65D78C 75%, #84E373 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25D366', endColorstr='#84E373',GradientType=1 );
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all .3s;
+  }
+  
+  
+  .btn-custom:hover .BG, .btn-custom:hover .BG-facebook, .btn-custom:hover .BG-whatsapp {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  
+  .btn-custom:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+  }
+  
+  
+  /* END NAVBAR */
+  
+  .section-banner{
+    padding-bottom: 4rem;
+    /* min-height: calc(100vh - 10rem) !important;  */
+  }
+  
+  
+  .sofia-text{
+    font-weight: 700;
+    /* font-size: 8vmin; */
+    font-size: 2.5rem;
+  
+    position: absolute;
+    letter-spacing: 1.2vmin;
+  }
+  
+  .paragraph-sofia{
+  margin-top: 5rem;
+  }
+  
+  .bg-title{
+      font-size: 2.5rem;
+  }
+  
+  .border-custom {
+    color: black;
+    text-shadow:
+      -1px -1px 0 white, 
+      1px -1px 0 white,
+      -1px 1px 0 white,
+      1px 1px 0 white;  
+    
+  }
+  
+  
+  :root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+  
+  .card {
+    background: #191c29;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    /* cursor: pointer; */
+    font-family: cursive;
+  
+  }
+  
+  
+  
+  .card::before {
+    content: ""; 
+    border-radius: 8px;
+    opacity: 0.1;
+  
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 4s linear infinite;
+  }
+  
+  .card::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    opacity: 0.1;
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 4s linear infinite;
+  }
+  
+    @keyframes spin {
+      0% {
+        --rotate: 0deg;
+      }
+      100% {
+        --rotate: 360deg;
+      }
+    }
+  
+    
+    /* Background title */
+  
+    .jumbo span {
+      background: -moz-linear-gradient(45deg, #0B76C2 0%, #3498DB 25%, #56C7E9 50%, #78D7F2 75%, #9BD7F5 100%);
+      background: -webkit-linear-gradient(45deg, #0B76C2 0%, #3498DB 25%, #56C7E9 50%, #78D7F2 75%, #9BD7F5 100%);
+      background: linear-gradient(45deg, #0B76C2 0%, #3498DB 25%, #56C7E9 50%, #78D7F2 75%, #9BD7F5 100%); 
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25D366', endColorstr='#84E373',GradientType=1 );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+  
+    .banner-sofia{
+      background-image: url('images/banner-sofia.png') !important;
+      background-repeat: round;
+  
+    }
+  
+    /* .section-about {
+      min-height: 90vh;
+    } */
+    
+    .rounded-rect {
+      width: 100%;
+      height: 280px;
+      border-radius: 20px;
+      background-image: url(images/about.png);
+      padding-right: 10px !important; 
+      box-shadow: 0px 5px 5px #ffffff !important;
+      background-size: cover;
+    
+    }
+  
+  
+  /* card banner */
+  
+   .padding-banner{
+    padding-left: 0;
+    padding-top: 30px;
+  }
+  
+  .card-banner img {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media(max-width : 760px){
+    .padding-banner{
+      display: none;
+      padding-top: 50px !important;
+    }
+  }
+  
+  .card-banner-2-icon {
+      position: absolute;
+      top: 4.688rem;
+      left: 13.75rem;
+      border-radius: var(--br-xl);
+      width: 15rem;
+      height: 31.25rem;
+      object-fit: cover;
+    }
+  
+    .card-banner,
+  .card-banner1 {
+    height: 35.938rem;
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+  }
+  .card-banner-2-icon1 {
+    position: absolute;
+    top: 4.688rem;
+    left: 13.75rem;
+    border-radius: var(--br-xl);
+    width: 15rem;
+    height: 31.25rem;
+    object-fit: cover;
+  }
+  
+  
+  .card-banner-2-parent {
+      height: 35.938rem;
+      flex: 1;
+      position: relative;
+      max-width: 100%;
+    }
+    .card-banner-parent {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      min-width: 26.563rem;
+      max-width: 100%;
+    }
+  
+  
+    .card-banner-2-icon2 {
+      position: absolute;
+      top: 4.688rem;
+      left: 13.75rem;
+      border-radius: var(--br-xl);
+      width: 15rem;
+      height: 31.25rem;
+      object-fit: cover;
+    }
+  
+  
+    .card-banner2,
+  .card-banner3 {
+    height: 35.938rem;
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+  }
+  .card-banner-2-icon3 {
+    position: absolute;
+    top: 4.688rem;
+    left: 13.75rem;
+    border-radius: var(--br-xl);
+    width: 15rem;
+    height: 31.25rem;
+    object-fit: cover;
+  }
+  
+  
+  .card-banner-2-group {
+      height: 35.938rem;
+      flex: 1;
+      position: relative;
+      max-width: 100%;
+    }
+    .card-banner-group {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      min-width: 26.563rem;
+      max-width: 100%;
+    }
+  
+  
+  
+  
+    /*  */
+  
+  
+  
+    .image-4-icon {
+      top: 0;
+      left: 0;
+      width: 11.625rem;
+      height: 18rem;
+      object-fit: cover;
+    }
+    .image-4-icon,
+    .image-6-icon,
+    .rectangle {
+      position: absolute;
+      border-radius: var(--br-13xl);
+    }
+    .rectangle {
+      top: 1.625rem;
+      left: 0;
+      background: linear-gradient(180deg, #4483ce, #224268);
+      width: 12rem;
+      height: 12rem;
+      border-radius: 32px;
+    }
+    .image-6-icon {
+      top: 0;
+      left: 0.625rem;
+      width: 13rem;
+      height: 13rem;
+      object-fit: cover;
+      z-index: 1;
+    }
+    .rectangle-parent {
+      position: absolute;
+      top: 15.313rem;
+      left: 27.25rem;
+      width: 13.625rem;
+      height: 13.625rem;
+      z-index: 1;
+    }
+    .image-3-icon {
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      object-fit: contain;
+      position: absolute;
+      left: 2rem;
+      top: 2rem;
+      transform: scale(2.25);
+    }
+    .wrapper-image-3 {
+      position: absolute;
+      top: 21.375rem;
+      left: 1.25rem;
+      border-radius: var(--br-5xs);
+      width: 15rem;
+      height: 10rem;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-banner,
+    .card-banner1 {
+      height: 35.938rem;
+      flex: 1;
+      position: relative;
+      max-width: 100%;
+    }
+    .card-banner-2-icon1 {
+      position: absolute;
+      top: 4.688rem;
+      left: 13.75rem;
+      border-radius: var(--br-xl);
+      width: 15rem;
+      height: 31.25rem;
+      object-fit: cover;
+    }
+    .image-4-icon1 {
+      top: 0;
+      left: 0;
+      width: 11.625rem;
+      height: 18rem;
+      object-fit: cover;
+    }
+    .image-4-icon1,
+    .image-6-icon1,
+    .rectangle1 {
+      position: absolute;
+      border-radius: var(--br-13xl);
+    }
+    .rectangle1 {
+      top: 1.625rem;
+      left: 0;
+      background: linear-gradient(180deg, #4483ce, #224268);
+      width: 12rem;
+      height: 12rem;
+    }
+    .image-6-icon1 {
+      top: 0;
+      left: 0.625rem;
+      width: 13rem;
+      height: 13rem;
+      object-fit: cover;
+      z-index: 1;
+    }
+    .rectangle-group {
+      position: absolute;
+      top: 15.313rem;
+      left: 27.25rem;
+      width: 13.625rem;
+      height: 13.625rem;
+      z-index: 1;
+    }
+    .image-3-icon1 {
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      object-fit: contain;
+      position: absolute;
+      left: 2rem;
+      top: 2rem;
+      transform: scale(2.25);
+    }
+    .wrapper-image-31 {
+      position: absolute;
+      top: 21.375rem;
+      left: 1.25rem;
+      border-radius: var(--br-5xs);
+      width: 15rem;
+      height: 10rem;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+  
+  
+    /* responsive banner */
