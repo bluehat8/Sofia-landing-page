@@ -2,38 +2,40 @@
     import '../styles/global.css';
     let imagePath = 'images/banner-sofia.webp';
 
-    import { onMount } from 'svelte';
-    import { randomRange, createCircle, setCircleAttributes, animateStars } from '../utils/svg';
+     import RocketComponent from '../components/rocket.svelte';
 
-    let starElements: SVGCircleElement[] = [];
+    // import { onMount } from 'svelte';
+    // import { randomRange, createCircle, setCircleAttributes, animateStars } from '../utils/svg';
 
-    onMount(() => {
-      const rocket = document.getElementById('rocket-icon');
-      const flame = document.querySelector('.flame');
+    // let starElements: SVGCircleElement[] = [];
+
+    // onMount(() => {
+    //   const rocket = document.getElementById('rocket-icon');
+    //   const flame = document.querySelector('.flame');
       
-      // generate a set of a transforms that randomly scales the width and height of the rocket’s flame
-      const flicker = Array.from({ length: 20 }).map(() => ({
-        transform: `scale(${randomRange(0.9, 1.2)}, ${randomRange(0.9, 1.2)})`,
-      }));
+    //   // generate a set of a transforms that randomly scales the width and height of the rocket’s flame
+    //   const flicker = Array.from({ length: 20 }).map(() => ({
+    //     transform: `scale(${randomRange(0.9, 1.2)}, ${randomRange(0.9, 1.2)})`,
+    //   }));
 
-      if (flame) {
-        flame.animate(flicker, { duration: 750, iterations: Infinity });
-      }
-      // create and insert the stars (circles) to the SVG
-      starElements = Array.from({ length: 10 }).map(() => createCircle());
-      if (rocket) {
-        const top = rocket.querySelector('*');
-        if (top) {
-          for (const star of starElements) {
-            rocket.insertBefore(star, top);
-          }
-        } else {
-          // Handle the case where the element with "*" selector is not found within $rocket (optional)
-        }
-      } else {
-      }
-      animateStars(starElements);
-    });
+    //   if (flame) {
+    //     flame.animate(flicker, { duration: 750, iterations: Infinity });
+    //   }
+    //   // create and insert the stars (circles) to the SVG
+    //   starElements = Array.from({ length: 10 }).map(() => createCircle());
+    //   if (rocket) {
+    //     const top = rocket.querySelector('*');
+    //     if (top) {
+    //       for (const star of starElements) {
+    //         rocket.insertBefore(star, top);
+    //       }
+    //     } else {
+    //       // Handle the case where the element with "*" selector is not found within $rocket (optional)
+    //     }
+    //   } else {
+    //   }
+    //   animateStars(starElements);
+    // });
 </script>
 
  <section class="section-banner container align-items-center">
@@ -62,6 +64,8 @@
 
     <!-- rocket -->
 
+    <RocketComponent></RocketComponent>
+<!-- 
 <div class="container justify-content-center">
     <div class="row align-items-center">
         <svg id="rocket-icon" class="container" viewBox="0 0 75 75">
@@ -78,6 +82,6 @@
             <path fill="#68D4F8" d="M21 37.5c0-10.04-11 0-12 0 1 0 12 10.04 12 0z" class="flame"/>
         </svg>
     </div>
-  </div>
+  </div> -->
   
   </section>

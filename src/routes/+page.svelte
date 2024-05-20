@@ -7,7 +7,6 @@
     import AboutComponent from '../components/about.svelte';
     import Services from '../components/services.svelte';
     import ContactForm from '../components/contact-form.svelte';
-    import RocketComponent from '../components/rocket.svelte';
 </script>
 
 <main>
@@ -15,5 +14,4 @@
  <AboutComponent></AboutComponent>
  <Services></Services> 
  <ContactForm></ContactForm>
- <RocketComponent></RocketComponent>
 </main>

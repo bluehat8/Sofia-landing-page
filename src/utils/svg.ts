@@ -1,5 +1,3 @@
-import { onMount } from 'svelte';
-
 // used to easily give a number between x and y
 export function randomRange(min: number, max: number) {
   return Math.random() * (max - min) + min;
