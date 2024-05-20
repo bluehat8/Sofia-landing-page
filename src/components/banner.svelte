@@ -1,6 +1,39 @@
-<script>
+<script lang="ts">
     import '../styles/global.css';
     let imagePath = 'images/banner-sofia.webp';
+
+    import { onMount } from 'svelte';
+    import { randomRange, createCircle, setCircleAttributes, animateStars } from '../utils/svg';
+
+    let starElements: SVGCircleElement[] = [];
+
+    onMount(() => {
+      const rocket = document.getElementById('rocket-icon');
+      const flame = document.querySelector('.flame');
+      
+      // generate a set of a transforms that randomly scales the width and height of the rocket’s flame
+      const flicker = Array.from({ length: 20 }).map(() => ({
+        transform: `scale(${randomRange(0.9, 1.2)}, ${randomRange(0.9, 1.2)})`,
+      }));
+
+      if (flame) {
+        flame.animate(flicker, { duration: 750, iterations: Infinity });
+      }
+      // create and insert the stars (circles) to the SVG
+      starElements = Array.from({ length: 10 }).map(() => createCircle());
+      if (rocket) {
+        const top = rocket.querySelector('*');
+        if (top) {
+          for (const star of starElements) {
+            rocket.insertBefore(star, top);
+          }
+        } else {
+          // Handle the case where the element with "*" selector is not found within $rocket (optional)
+        }
+      } else {
+      }
+      animateStars(starElements);
+    });
 </script>
 
  <section class="section-banner container align-items-center">
@@ -17,7 +50,7 @@
             <a href="#test" class="btn-outline-custom mx-3" target="_blank"><i class="fa-brands fa-github"></i> &nbsp;Learn more</a>
           </div>
         </div>
-        <div class="col-md-6 padding-banner border-0">
+        <div class="col-md-6 py-2 padding-banner border-0">
 
           <div class="card bg-transparent border-0 image-banner">
             <img src="{imagePath}" alt="" class="img-fluid img-sm-75 img-md-75 img-lg-100">

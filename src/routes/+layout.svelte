@@ -1,10 +1,34 @@
 <script>
     import '../styles/global.css';
     let imagePath = 'images/Sofialogo.png';
-  </script>
+    import { onMount } from 'svelte';
+
+    let scrolled = false;
+
+    const threshold = 60; // Scrolling threshold in pixels
+    onMount(() => {
+      const navbar = document.querySelector('.navbar');
+      const handleScroll = () => {
+        scrolled = window.scrollY > threshold;
+        if (navbar) {
+          navbar.classList.toggle('bg-black', scrolled); // Toggle based on scrolled value
+          if (scrolled) {
+            navbar.classList.remove("bg-transparent");
+          }
+        }
+      };
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    });
+</script>
 
 
 <style>
+    .navbar {
+        transition: background-color 0.5s ease-in-out;
+    }
     @media (max-width: 991px){
       .sidebar{
         background-color: rgb(24, 24, 24);
@@ -15,7 +39,7 @@
     }
 </style>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-black navbar-glassm fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent navbar-glassm fixed-top">
     <div class="container mt-2">
 
          <a class="navbar-brand d-flex align-items-center" href="/page.svelte">

@@ -147,3 +147,31 @@ h1.jumbo{
   .flame {
     transform-origin: 15px 37.5px;
   }
+
+
+.stars {
+    animation: moveStars 5s linear infinite;
+}
+
+.star {
+    fill: #AAB7C4;
+    animation: twinkle 2s infinite;
+}
+
+@keyframes moveStars {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+@keyframes twinkle {
+    50% { opacity: 0.3; }
+}
+
+.flame {
+    animation: flicker 0.5s infinite;
+}
+
+@keyframes flicker {
+    0%, 100% { transform: scale(1, 1); }
+    50% { transform: scale(1.2, 0.8); }
+}
