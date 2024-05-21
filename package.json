@@ -22,6 +22,7 @@
 	"type": "module",
 	"dependencies": {
 		"@types/scrollreveal": "^0.0.11",
+		"dom": "^0.0.3",
 		"svelte-reveal": "^1.1.0"
 	}
 }
