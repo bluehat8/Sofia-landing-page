@@ -3,7 +3,7 @@
     let imagePath = 'images/banner-sofia.webp';
     import RocketComponent from './shared/rocket.svelte';
 
-    import Modal from './shared/schedule-meet.svelte';
+    import Modal from './shared/shedule-meet.svelte';
     let isOpenModal = false;
 
     function openModal() {
