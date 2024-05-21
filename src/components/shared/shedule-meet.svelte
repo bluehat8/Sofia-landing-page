@@ -34,7 +34,7 @@
                     <path fill="#00ac47" d="M144.822 105.322v45.338H59.984v59.984h125.804c9.69 0 17.553-7.866 17.553-17.554v-37.796z" />
                     <path fill="#ffba00" d="M185.788 0H59.984v59.984h84.838v45.338l58.52-48.49V17.555c0-9.69-7.864-17.554-17.554-17.554" />
                 </svg>
-              <p class="text-start fw-lighter">30 minutos</p>
+              <p class="text-start fw-lighter">30 minutes</p>
             </div>
           </div>
       </div>
@@ -43,7 +43,7 @@
       </div>
       <div class="time-panel">
         <div class="time-header">
-          <button class="time-format-btn">12 horas</button>
+          <button class="time-format-btn">12 hours</button>
         </div>
         <div class="time-slots">
           <!-- Add time slots code here -->
