@@ -1,7 +1,17 @@
 <script lang="ts">
     import '../styles/global.css';
     let imagePath = 'images/banner-sofia.webp';
-    import RocketComponent from '../components/rocket.svelte';
+    import RocketComponent from './shared/rocket.svelte';
+
+    import Modal from './shared/schedule-meet.svelte';
+    let isOpenModal = false;
+
+    function openModal() {
+      isOpenModal = true;
+    }
+    function closeModal() {
+      isOpenModal = false;
+    }
 </script>
 
  <section class="section-banner container align-items-center">
@@ -15,7 +25,7 @@
           <p class="text-secondary">We build effective strategies to help you reach customers <br>prospects across the entire web</p>
           <div class="d-flex">
             <a href="#contact" class="btn-contact borderless-button">Contact &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-            <a href="#test" class="btn-outline-custom mx-3" target="_blank"><i class="fa-brands fa-github"></i> &nbsp;Learn more</a>
+            <button id="let-talk-button" on:click={openModal} class="btn-outline-custom mx-3"><i class="fa-regular fa-calendar"></i> &nbsp;Let's talk</button>
           </div>
         </div>
         <div class="col-md-6 py-2 padding-banner border-0">
@@ -28,4 +38,7 @@
     </div>
 
     <RocketComponent></RocketComponent>
+
+    <Modal isOpen={isOpenModal} on:closeModal={closeModal} />
+
   </section>

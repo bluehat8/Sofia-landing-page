@@ -1,5 +1,6 @@
 <script>
     import '../styles/global.css';
+    import '../styles/footer.css';
     let imagePath = 'images/Sofialogo.png';
     import { onMount } from 'svelte';
 
@@ -63,16 +64,16 @@
           <ul class="navbar-nav justify-content-center align-items-center fs-6 flex-grow-1 pe-3">
             
             <li class="nav-item mx-4">
-              <a class="nav-link" href="#test">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item mx-4">
-              <a class="nav-link" href="#test">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item mx-4">
-              <a class="nav-link" href="#test">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item mx-4">
-              <a class="nav-link" href="#test">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           
           </ul>
@@ -98,6 +99,32 @@
         </div>
       </div>
     </div>
-  </nav>
+</nav>
 
-  <slot/>
+
+<slot/>
+
+<footer class="footer">
+  <ul class="social-icon align-items-center justify-content-center">
+    <li class="social-icon__item"><a class="social-icon__link" href="#test">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="#test">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a></li>
+    <!-- <li class="social-icon__item"><a class="social-icon__link" href="#test">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="#test">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a></li> -->
+  </ul>
+  <ul class="menu align-items-center justify-content-center">
+    <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+    <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+    <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
+    <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+
+  </ul>
+  <p>&copy;2024 Sofia Consulting | All Rights Reserved</p>
+</footer>

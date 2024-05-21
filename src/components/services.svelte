@@ -2,7 +2,7 @@
     import '../styles/gallery.css';
 </script>
 
-<section class="section-gallery">
+<section class="section-gallery" id="services">
 
     <div class="container container-video-gallery">
     

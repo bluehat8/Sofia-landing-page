@@ -21,7 +21,7 @@ import '../styles/contact.css'
 
 </style> -->
   
-  <section class="background contact-section">
+  <section class="background contact-section" id="contact">
     <div class="overlay"></div>
     <div class="contact-container">
       <div class="screen">
@@ -43,28 +43,32 @@ import '../styles/contact.css'
               <span>Ready to scale up your business?</span>
               <span>Let's talk about it!</span>
             </div>
-            <div class="app-contact">CONTACT INFO: +62 81 314 928 595</div>
+            <div class="app-contact">CONTACT INFO: +505 82282296</div>
           </div>
-          <div class="screen-body-item">
+          
+          <form action="https://formspree.io/f/xayrzygo"
+          method="POST" class="screen-body-item">
             <div class="app-form">
               <div class="app-form-group">
-                <input class="app-form-control" placeholder="NAME" value="{name}">
+                <input class="app-form-control" placeholder="NAME" required name="name" value="{name}">
               </div>
               <div class="app-form-group">
-                <input class="app-form-control" placeholder="EMAIL" bind:value="{email}">
+                <input class="app-form-control" placeholder="EMAIL" required type="email" name="email" bind:value="{email}">
               </div>
               <div class="app-form-group">
-                <input class="app-form-control" placeholder="CONTACT NO" bind:value="{contactNo}">
+                <input class="app-form-control" placeholder="CONTACT NO" required type="phone" name="phone" bind:value="{contactNo}">
               </div>
               <div class="app-form-group message">
-                <textarea class="app-form-control max" placeholder="MESSAGE" bind:value="{message}"></textarea>
+                <textarea class="app-form-control max app-form-textarea" required name="message" placeholder="MESSAGE" bind:value="{message}"></textarea>
               </div>
               <div class="app-form-group buttons">
-                <button class="app-form-button" on:click="{cancel}">CANCEL</button>
+                <!-- <button class="app-form-button" on:click="{cancel}">CANCEL</button> -->
                 <button class="app-form-button" on:click="{send}">SEND</button>
               </div>
             </div>
-          </div>
+
+          </form>
+
         </div>
       </div>
     </div>

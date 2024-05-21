@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { randomRange, createCircle, setCircleAttributes, animateStars } from '../utils/svg';
+    import { randomRange, createCircle, setCircleAttributes, animateStars } from '../../utils/svg';
 
     let starElements: SVGCircleElement[] = [];
 
