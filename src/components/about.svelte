@@ -2,7 +2,7 @@
     import { reveal, setDefaultOptions } from 'svelte-reveal';
 </script>
 
-<section use:reveal={{ delay: 200, duration: 300, reset: true, easing: [0.35, 0.5, 0.65, 0.98], preset: 'fly', y:50, opacity:0}} 
+<section
 id="about" class="section-b py-5">
     <div class="overlay" id="about-overlay">
       <div class="section-b-inner py-5">

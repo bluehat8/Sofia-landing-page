@@ -34,9 +34,18 @@ header .menu{
 }
 /* css slider */
 .slider{
-    height: 100vh;
+    height: 130vh;
     margin-top: 0px;
     position: relative;
+    /* align-items: center;
+    justify-content: center;
+    display: flex; */
+    display: flex; /* Cambia el display a flex para alinear los elementos en la misma fila */
+    flex-wrap: wrap; /* Permitir el ajuste de los elementos en filas múltiples */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 20px; /* Espacio entre los elementos */
+
 }
 .slider .list .item{
     position: absolute;
@@ -58,7 +67,7 @@ header .menu{
     left: 0;
     bottom: 0;
     background-image: linear-gradient(
-        to top, #000 40%, transparent
+        to top, #000 35%, transparent
     );
 }
 .slider .list .item .content{
@@ -123,27 +132,35 @@ header .menu{
     background-color: #eee;
     color: black;
 }
-.thumbnail{
-    position: absolute;
-    bottom: 3%;
-    z-index: 11;
+
+
+.thumbnail {
+    /* Mantenemos la misma configuración para dispositivos más grandes */
     display: flex;
+    position: relative;
+    z-index: 11;
     gap: 10px;
     width: 100%;
     height: 280px;
-    padding: 0 50px;
     box-sizing: border-box;
-    overflow-x: auto; 
-    justify-content: center;
-    /* margin-top: 110%; */
+    overflow-x: auto;
+
 }
+
+
+.list, .thumbnail {
+    /* Ajusta las propiedades para cada sección */
+    flex: 1; /* Hace que cada sección ocupe un espacio igual */
+    max-width: 50%; /* Limita el ancho máximo de cada sección al 50% del contenedor padre */
+}
+
 
 .item .text {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     color: white;
     padding: 10px;
     box-sizing: border-box;
@@ -182,117 +199,46 @@ header .menu{
     position: absolute;
     inset: auto 10px 10px 10px;
 }
-@media screen and (max-width: 678px) {
-    .thumbnail{
-        padding-top: 0rem;
-        bottom: 50px;
-
-        justify-content: start;
+@media screen and (max-width: 878px) {
+    .list, .thumbnail {
+        max-width: 100%; /* En dispositivos móviles, cada sección ocupa el 100% del ancho */
     }
+
+    .thumbnail {
+        position: absolute;
+        order: 2; /* Cambia el orden del thumbnail */
+        margin-top: 500px; /* Agrega un espacio entre el list y el thumbnail */
+        justify-content: start;
+        padding: 0 50px;
+        /* padding: 0 0px; */
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
     .slider .list .item .content h2{
         font-size: 60px;
     }
     .arrows{
         top: 10%;
     }
+
 }
 
 
-
-/* trest */
-
-
-.slider .list .item .content {
-    position: absolute;
-    left: 10%;
-    top: 20%;
-    width: 80%;
-    max-width: 500px; /* Añadimos un ancho máximo */
-    z-index: 1;
-  }
-  
-  .slider .list .item .content p {
-    word-break: break-word; /* Evita que las palabras largas se salgan del contenedor */
-  }
-  
-  @media screen and (max-width: 678px) {
-
-  
-    .slider .list .item .content h2 {
-      font-size: 40px; /* Reducimos el tamaño del encabezado */
-    }
-  
-    .slider .list .item .content .description {
-      font-size: 14px; /* Reducimos el tamaño del texto */
-    }
-  }
-
-
-
-  /* gtest */
-
-  .slider .list .item .content {
-    position: absolute;
-    left: 10%;
-    top: 20%;
-    width: 80%;
-    max-width: 500px;
-    z-index: 2; /* Aumentamos el z-index del contenido */
-  }
-  
-  .slider .list .item .content p {
-    word-break: break-word;
-  }
-  
-
-  
-  @media screen and (max-width: 678px) {
-    .slider .list .item .content {
-      top: 18%;
-      width: 90%;
-      max-width: none;
-      margin-bottom: 100px;
-    }
-  
-    .slider .list .item .content h2 {
-      font-size: 40px;
-    }
-  
-    .slider .list .item .content p {
-      font-size: 14px;
-    }
-
-    .thumbnail{
-        padding-top: 0.8rem;
-        padding-left: 0.5rem;
-        bottom: 0px;
-    }
-  }
-
-
-
-  /* kjsakjsas */
-
-
-  @media screen and (max-width: 990px) {
-    .slider .list .item .content {
-        top: 18%;
-        width: 80%; /* Ajustamos el ancho */
-        max-width: none;
-        margin-bottom: 150px; /* Incrementamos el margen inferior */
+/* @media(max-width: 900px){
+    .slider .list .item .content p:nth-child(1),
+    .slider .list .item .content h2,
+    .slider .list .item .content p:nth-child(3) {
+        font-size: 3vw; 
     }
 
     .slider .list .item .content h2 {
-        font-size: 40px;
+        font-size: 3vw;
     }
 
-    .slider .list .item .content p {
-        font-size: 14px;
+    .thumbnail .item .text {
+        font-size: 2vw; 
     }
-
-    .thumbnail {
-        padding-top: 0rem; /* Ajustamos el padding superior */
-        padding-left: 1rem; /* Ajustamos el padding izquierdo */
-        margin-top: 0px;
-    }
-}
+} */
