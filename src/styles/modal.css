@@ -104,11 +104,11 @@
   } */
 
   @media (max-width: 767px) {
-     .modal{
+     /* .modal{
         padding-top: 2rem !important; 
         padding-right: 4vmin !important;
         padding-left:  4vmin !important;
-      } 
+      }  */
       
   }
   

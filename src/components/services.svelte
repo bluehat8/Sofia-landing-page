@@ -1,8 +1,10 @@
 <script>
     import '../styles/gallery.css';
+    import {reveal, setDefaultOptions} from 'svelte-reveal';
 </script>
 
-<section class="section-gallery" id="services">
+<section 
+  class="section-gallery"  id="services">
 
     <div class="container container-video-gallery">
     

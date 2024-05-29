@@ -12,6 +12,7 @@
 
 import '../styles/about.css'
 import '../styles/contact.css'
+import {reveal, setDefaultOptions} from 'svelte-reveal';
 
 </script>
   
@@ -21,7 +22,7 @@ import '../styles/contact.css'
 
 </style> -->
   
-  <section class="background contact-section" id="contact">
+  <section use:reveal={{delay: 200, duration: 200, reset: true, y:20, opacity: 0, easing:[0.35, 0.5, 0.65, 0.98]}} class="background contact-section" id="contact">
     <div class="overlay"></div>
     <div class="contact-container">
       <div class="screen">
