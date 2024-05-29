@@ -87,7 +87,7 @@
 }
 
 .btn-outline-custom:hover svg path {
-  fill: black; /* Cambia el color del SVG al hacer hover */
+  fill: black;
 }
 
 h1.jumbo{

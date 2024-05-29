@@ -99,7 +99,8 @@ header .menu{
 }
 .slider .list .item.active p:nth-child(1),
 .slider .list .item.active h2,
-.slider .list .item.active p:nth-child(3){
+.slider .list .item.active p:nth-child(3),
+.slider .list .item.active .hero-buttons{
     transform: translateY(30px);
     filter: blur(20px);
     opacity: 0;
