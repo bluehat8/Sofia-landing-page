@@ -10,9 +10,9 @@ let slider5 = 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpe
 
 </script>
 
+<div class="hero-container">
 
 <div class="slider">
-    <!-- list Items -->
     <div class="list">
         <div class="item active">
             <img src="{slider1}"  alt="slider1">
@@ -76,12 +76,7 @@ let slider5 = 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpe
             </div>
         </div>
     </div>
-    <!-- button arrows -->
-    <!-- <div class="arrows">
-        <button id="prev"></button>
-        <button id="next"></button>
-    </div> -->
-    <!-- thumbnail -->
+   
     <div class="thumbnail">
         <div class="item active">
             <img src="{slider1}" alt = 'slider1'>
@@ -107,11 +102,9 @@ let slider5 = 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpe
                 Branding
             </div>
         </div>
-        <!-- <div class="item">
-            <img src="{slider5}" alt='slider5'>
-            <div class="content">
-                Name Slider
-            </div>
-        </div> -->
+       
     </div>
+</div> 
+
+
 </div>

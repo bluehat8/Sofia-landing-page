@@ -125,7 +125,7 @@ header .menu{
 }
 .thumbnail{
     position: absolute;
-    bottom: 50px;
+    bottom: 3%;
     z-index: 11;
     display: flex;
     gap: 10px;
@@ -137,9 +137,28 @@ header .menu{
     justify-content: center;
     /* margin-top: 110%; */
 }
+
+.item .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.thumbnail .item:hover{
+    scale: 103%;
+} 
+
 .thumbnail::-webkit-scrollbar{
     width: 0;
     background-color: none;
+    visibility: hidden;
 
 }
 .thumbnail .item{
@@ -246,7 +265,7 @@ header .menu{
     .thumbnail{
         padding-top: 0.8rem;
         padding-left: 0.5rem;
-        bottom: 30px;
+        bottom: 0px;
     }
   }
 
@@ -255,7 +274,7 @@ header .menu{
   /* kjsakjsas */
 
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 990px) {
     .slider .list .item .content {
         top: 18%;
         width: 80%; /* Ajustamos el ancho */
@@ -272,29 +291,8 @@ header .menu{
     }
 
     .thumbnail {
-        padding-top: 1rem; /* Ajustamos el padding superior */
+        padding-top: 0rem; /* Ajustamos el padding superior */
         padding-left: 1rem; /* Ajustamos el padding izquierdo */
+        margin-top: 0px;
     }
 }
-
-
-
-.item .text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-
-.thumbnail .item:hover{
-    scale: 103%;
-}
-
-
-  
