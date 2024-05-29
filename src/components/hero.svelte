@@ -3,10 +3,12 @@
     let calendlyLink = 'https://calendly.com/agustin-amaya-g21/30min';
     import {onMount} from 'svelte';
 
-    let slider1 = 'https://images.pexels.com/photos/8761047/pexels-photo-8761047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
-    let slider2 = 'https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
-    let slider3 = 'https://images.pexels.com/photos/2977565/pexels-photo-2977565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
-    let slider4 = 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+    // let slider1 = 'https://images.pexels.com/photos/8761047/pexels-photo-8761047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+    let slider1 = 'https://media.licdn.com/dms/image/D5612AQHpfEbHVLv-AA/article-cover_image-shrink_720_1280/0/1677436944483?e=2147483647&v=beta&t=TCpljsv4z7HGZ3vuS-6lhuVjt2FqLAdLhgwTfwRevcc';
+    let slider2 = 'https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+    // let slider3 = 'https://images.pexels.com/photos/2977565/pexels-photo-2977565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+    let slider3 = 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+    let slider4 = 'images/Sofia-crm.png';
     let slider5 = 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
 
     let items: NodeListOf<HTMLDivElement>;  let next: HTMLButtonElement;
@@ -142,11 +144,10 @@
         <div class="item">
             <img src="{slider4}" alt='slider4'>
             <div class="content">
-                <p>design</p>
-                <h2>Slider 04</h2>
+                <p>CRM Software</p>
+                <h2>SOFIA</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    We offer leading cloud-based CRM solutions designed specifically for the needs of travel agencies and hospitals.
                 </p>
 
                 <div class="d-flex hero-buttons">
@@ -192,8 +193,8 @@
         </div>
         <div class:active={itemActive === 3} class="item">
             <img src="{slider4}" alt='slider4'>
-            <div class="text">
-                Branding
+            <div class="text text-dark font-weight-bold">
+                SASS
             </div>
         </div>
        
