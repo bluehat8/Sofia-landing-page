@@ -85,25 +85,25 @@ let slider5 = 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpe
     <div class="thumbnail">
         <div class="item active">
             <img src="{slider1}" alt = 'slider1'>
-            <div class="content">
+            <div class="text">
                 Consulting
             </div>
         </div>
         <div class="item">
             <img src="{slider2}" alt= 'slider2'>
-            <div class="content">
+            <div class="text">
                 Development
             </div>
         </div>
         <div class="item">
             <img src="{slider3}" alt='slider3'>
-            <div class="content">
+            <div class="text">
                 UX/UI
             </div>
         </div>
         <div class="item">
             <img src="{slider4}" alt='slider4'>
-            <div class="content">
+            <div class="text">
                 Branding
             </div>
         </div>
