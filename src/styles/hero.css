@@ -49,7 +49,7 @@ header .menu{
 }
 
 .slider .list .content{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .slider .list .item{
     position: absolute;
@@ -230,8 +230,22 @@ header .menu{
         top: 10%;
     }
 
+
 }
 
+.description{
+    font-size: 0.9rem !important;
+
+    padding-right: 9rem;
+}
+
+
+@media(max-width: 767px){
+    .description{
+        padding-right: 0px;
+        width: 100%;
+    }
+}
 
 /* @media(max-width: 900px){
     .slider .list .item .content p:nth-child(1),
@@ -248,11 +262,4 @@ header .menu{
         font-size: 2vw; 
     }
 } */
-
-
-.description{
-    font-size: 15px !important;
-    width: 100%;
-    padding-right: 6rem;
-}
 
