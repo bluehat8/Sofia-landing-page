@@ -173,27 +173,27 @@
     <div class="thumbnail">
         <div class:active={itemActive === 0} class="item">
             <img src="{slider1}" alt = 'slider1'>
-            <div class="text">
+            <!-- <div class="text">
                 Consulting
-            </div>
+            </div> -->
         </div>
         <div class:active={itemActive === 1} class="item">
             <img src="{slider2}" alt= 'slider2'>
-            <div class="text">
+            <!-- <div class="text">
                 Development
-            </div>
+            </div> -->
         </div>
         <div class:active={itemActive === 2} class="item">
             <img src="{slider3}" alt='slider3'>
-            <div class="text">
+            <!-- <div class="text">
                 UX/UI
-            </div>
+            </div> -->
         </div>
         <div class:active={itemActive === 3} class="item">
             <img src="{slider4}" alt='slider4'>
-            <div class="text text-dark font-weight-bold">
+            <!-- <div class="text text-dark font-weight-bold">
                 SASS
-            </div>
+            </div> -->
         </div>
        
     </div>
