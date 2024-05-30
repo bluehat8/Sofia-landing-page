@@ -47,6 +47,10 @@ header .menu{
     gap: 20px; /* Espacio entre los elementos */
 
 }
+
+.slider .list .content{
+    margin-top: 10px;
+}
 .slider .list .item{
     position: absolute;
     inset: 0 0 0 0;
@@ -133,6 +137,7 @@ header .menu{
     background-color: #eee;
     color: black;
 }
+
 
 
 .thumbnail {
@@ -243,3 +248,11 @@ header .menu{
         font-size: 2vw; 
     }
 } */
+
+
+.description{
+    font-size: 15px !important;
+    width: 100%;
+    padding-right: 6rem;
+}
+
