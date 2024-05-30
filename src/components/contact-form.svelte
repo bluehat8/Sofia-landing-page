@@ -4,25 +4,12 @@
     let contactNo = '';
     let message = '';
   
-    function cancel() {
-    }
-  
-    function send() {
-    }
-
-import '../styles/about.css'
-import '../styles/contact.css'
-import {reveal, setDefaultOptions} from 'svelte-reveal';
+    import '../styles/about.css'
+    import '../styles/contact.css'
 
 </script>
   
-<!-- <style>
-    /* @import '../styles/contact.css'; */
-    @import '/static/css/contact.css';
-
-</style> -->
-  
-  <section use:reveal={{delay: 200, duration: 200, reset: true, y:20, opacity: 0, easing:[0.35, 0.5, 0.65, 0.98]}} class="background contact-section" id="contact">
+  <section class="background contact-section" id="contact">
     <div class="overlay"></div>
     <div class="contact-container">
       <div class="screen">
@@ -64,7 +51,7 @@ import {reveal, setDefaultOptions} from 'svelte-reveal';
               </div>
               <div class="app-form-group buttons">
                 <!-- <button class="app-form-button" on:click="{cancel}">CANCEL</button> -->
-                <button class="app-form-button" on:click="{send}">SEND</button>
+                <button class="app-form-button">SEND</button>
               </div>
             </div>
 

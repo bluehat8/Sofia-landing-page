@@ -7,7 +7,6 @@
     import AboutComponent from '../components/about.svelte';
     import Services from '../components/services.svelte';
     import ContactForm from '../components/contact-form.svelte';
-    import CalendarForm from '../components/shared/shedule-meet.svelte';
 </script>
 
 <main>
@@ -16,5 +15,4 @@
  <AboutComponent></AboutComponent>
  <Services></Services> 
  <ContactForm></ContactForm>
- <CalendarForm></CalendarForm>
 </main>
