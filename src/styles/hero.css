@@ -161,11 +161,11 @@ header .menu{
 }
 
 
-.item .text {
+.thumbnail .item .text {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100%; 
     /* background-color: rgba(0, 0, 0, 0.5); */
     color: white;
     padding: 10px;
@@ -203,7 +203,7 @@ header .menu{
 }
 .thumbnail .item .content{
     position: absolute;
-    inset: auto 10px 10px 10px;
+    /* inset: auto 10px 10px 10px; */
 }
 @media screen and (max-width: 878px) {
     .list, .thumbnail {

@@ -162,7 +162,7 @@
             <div class="content">
                 <p>design</p>
                 <h2>Slider 05</h2>
-                <p>
+                <p class="description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
                 </p>
